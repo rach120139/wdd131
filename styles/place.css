@@ -1,0 +1,95 @@
+:root {
+    --primary-color: rgb(128, 174, 230);
+    --text-color: #704242;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/cherrytree-large.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif; 
+    color: rgb(28, 18, 24);
+}
+
+header {
+    background-color: #0c0b0b;
+    color: rgb(243, 233, 233);
+    padding: 15px;
+}
+
+.weather {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px; 
+    width: 80%; 
+    max-width: 400px;
+    margin: 20px auto; 
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.weather h2 {
+    font-size: 1.8rem;
+    color: #333; 
+    font-weight: bold;
+}
+
+.weather-info p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .weather h2::after {
+        content: " ⛅"; 
+        font-size: 1.5rem;
+    }
+}
+
+.data {
+    padding-top: 10px;
+    display: grid;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 10px;
+    border-radius: 10px; 
+    width: 80%; 
+    max-width: 400px;
+    margin: 20px auto; 
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.data {
+    font-size: 1.2rem;
+    margin: 8px 0;
+} 
+
+@media  screen and (min-width: 768px) {
+    .data h3::after{
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: rgb(239, 238, 238);
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}

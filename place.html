@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>JAPAN</h1>
+    </header>
+
+    <main>
+        <section>
+            <picture>
+                <source srcset="../images/cherrytree-large.webp" media="(min-width: 768px)">
+            </picture>
+        </section>
+
+        <section class="weather">
+            <h2>Weather <span id="weather-icon">⛅</span></h2>
+            <p>Temperature: <span id="temperature">8</span>°C</p>
+            <p>Wind Speed: <span id="wind-speed">5.2</span> km/h</p>
+            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        </section>
+
+        <section class="data">
+            <h3>Data <span id="data"></span></h3>
+            <p>Area: <span id="area">2,194 km²</span></p>
+            <p>Population: <span id="population">123,285,920</span></p>
+            <p>Capital: <span id="capital">Tokyo</span></p>
+            <p>Language: <span id="language">Japanese</span></p>
+            <p>Currency: <span id="currency">Yen</span></p>
+            <p>Time Zone: <span id="time zone">JST</span></p>
+            <P>Calling Code: <span id="calling code">+81</span></P>
+            <p>Internet TLD: <span id="internet tld">.jp</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
+
