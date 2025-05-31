@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Tmeple Album">
+    <meta name="author" content="Rachael Aidoo">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Listings</h1>
+        <nav>
+            <button onclick="filterTemples('old')">Old</button>
+            <button onclick="filterTemples('new')">New</button>
+            <button onclick="filterTemples('large')">Large</button>
+            <button onclick="filterTemples('small')">Small</button>
+            <button onclick="filterTemples('all')">Home</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="temple-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Rachael Aidoo | Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
