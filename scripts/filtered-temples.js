@@ -9,12 +9,6 @@ menuToggle.addEventListener("click", () => {
     menuToggle.textContent = navMenu.classList.contains("show-menu") ? "✖" : "☰";
 });
 
-// Update Copyright Year
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-// Update Last Modified Date
-document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
-
 const temples = [
     {
       name: "Aba Nigeria",
@@ -123,7 +117,6 @@ function displayTemples(filteredTemples) {
     });
 }
 
-// === Filter Handler ===
 function filterTemples(category) {
     let filteredTemples = temples;
 
@@ -147,9 +140,12 @@ function filterTemples(category) {
     displayTemples(filteredTemples);
 }
 
-// === Initial Load ===
 document.addEventListener("DOMContentLoaded", () => {
     displayTemples(temples);
-    // Expose filterTemples globally for buttons
+
     window.filterTemples = filterTemples;
 });
+
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
