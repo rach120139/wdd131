@@ -1,3 +1,5 @@
+console.log("Filtered Temples JS Loaded");
+ 
  // Toggle Navigation Menu
 const menuToggle = document.getElementById("menu-toggle");
 const navMenu = document.getElementById("nav-menu");
@@ -139,6 +141,23 @@ function filterTemples(category) {
 
     displayTemples(filteredTemples);
 }
+
+const element = document.getElementById("someElement");
+if (element) {
+    element.addEventListener("click", () => {
+        console.log("Element clicked!");
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const element = document.getElementById("someElement");
+    if (element) {
+        element.addEventListener("click", () => {
+            console.log("Element clicked!");
+        });
+    }
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
     displayTemples(temples);
