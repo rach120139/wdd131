@@ -1,0 +1,95 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    color: #007BFF; /* Primary color for headings */
+  }
+  
+  /* Header */
+  .header {
+    background-color: #007BFF; /* Primary color */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .logo-img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Main layout container */
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  /* Section styles */
+  .about, .contact {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-left: 5px solid #007BFF; /* Accent with primary color */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Deseret Industries image */
+  .di-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 1rem auto 0;
+    border: 3px solid #6c757d; /* Secondary color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #6c757d; /* Secondary color */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 1rem;
+    }
+  
+    .logo-img {
+      height: 40px;
+    }
+  
+    .about, .contact {
+      padding: 1rem;
+    }
+  }
+  
