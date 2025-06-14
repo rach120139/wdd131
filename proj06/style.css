@@ -91,5 +91,9 @@
     .about, .contact {
       padding: 1rem;
     }
+
+    .di-image {
+        height: 40px;
+    }
   }
   
